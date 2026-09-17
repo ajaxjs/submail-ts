@@ -163,7 +163,13 @@ npm install     # 安装依赖
 npm run build   # 构建产物（ESM + CJS + 类型声明）至 dist/
 ```
 
-发布新版本：`npm version patch|minor|major && npm publish --registry https://registry.npmjs.org/`
+发布新版本（自动递增版本号、打 git tag 并构建发布）：
+
+```bash
+npm run release        # 1.0.0 -> 1.0.1（修订版本）
+npm run release:minor  # 1.0.1 -> 1.1.0（次版本）
+npm run release:major  # 1.1.0 -> 2.0.0（主版本）
+```
 
 ## 许可证
 

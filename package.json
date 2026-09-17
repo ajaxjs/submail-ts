@@ -31,7 +31,10 @@
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "release": "npm version patch && npm publish --registry https://registry.npmjs.org/",
+    "release:minor": "npm version minor && npm publish --registry https://registry.npmjs.org/",
+    "release:major": "npm version major && npm publish --registry https://registry.npmjs.org/"
   },
   "devDependencies": {
     "@types/node": "^20.14.0",
