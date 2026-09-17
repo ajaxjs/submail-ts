@@ -1,0 +1,41 @@
+{
+  "name": "submail-ts",
+  "version": "1.0.0",
+  "description": "SUBMAIL 赛邮云短信 SDK：模板短信 xsend 发送 + SUBHOOK 回调签名校验，零运行时依赖，支持 ESM / CJS",
+  "keywords": [
+    "submail",
+    "sms",
+    "subhook",
+    "xsend",
+    "短信",
+    "短信发送"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.0"
+  }
+}
