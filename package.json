@@ -1,6 +1,6 @@
 {
   "name": "submail-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SUBMAIL 赛邮云短信 SDK：模板短信 xsend 发送 + SUBHOOK 回调签名校验，零运行时依赖，支持 ESM / CJS",
   "keywords": [
     "submail",
